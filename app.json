@@ -1,0 +1,41 @@
+{
+  "name": "MrBot AutoTrade",
+  "description": "Trade automático Binance",
+  "keywords": [
+  ],
+  "website": "https://mrbot.io/",
+  "repository": "https://github.com/MrBot-io/auto-trading-release",
+  "success_url": "/",
+  "scripts": {
+  },
+  "env": {
+    "API_KEY": {
+      "description": "API KEY de Binance",
+      "required": true
+    },
+    "API_SECRET": {
+      "description": "API SECRET de Binance",
+      "required": true
+    },
+    "TESTNET": {
+      "description": "Testnet",
+      "value": false,
+      "required": true
+    },
+    "URL": {
+      "description": "Url de Heroku",
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku-community/cli.tgz"
+    }
+  ],
+  "environments": {
+  }
+}
